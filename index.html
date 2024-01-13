@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <!-- Menu items -->
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- Hamburger menu for mobile -->
+            <div class="navbar-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <!-- Title and content sections -->
+        <div class="title"><h2 id="strawh">strawberry</h2></div>
+        <div class="title"><h2 id="mangoh">mango</h2></div>
+        <div class="content">
+            <div class="desc">
+                <p>
+                    Your <span>healthy</span> life <br>
+                    starts here with us
+                </p>
+                <p>
+                    We produce 100% fresh fruit juice and are therefore healthier and more natural.
+                </p>
+            </div>
+        </div>
+        <!-- Juice and fruit images -->
+        <div class="juice">
+            <img src="./images/juice1.png"  class="juice-can">
+        </div>
+        <div class="strawberry">
+            <!-- Parallax layers for strawberry image -->
+            <ul id="scene">
+                <!-- Several layers of the strawberry image for parallax effect -->
+                <li class="layer1">
+                    <img src="./images/strawberry.png" class="l1" data-depth="-.1">
+                </li>
+                <li class="layer2">
+                    <img src="./images/strawberry.png" class="l2" data-depth="-.3">
+                </li>
+                <li class="layer3">
+                    <img src="./images/strawberry.png" class="l3" data-depth="-1.5">
+                </li>
+                <li class="layer4">
+                    <img src="./images/strawberry.png" class="l4" data-depth=".1">
+                </li>
+                <li class="layer5">
+                    <img src="./images/strawberry.png" class="l5" data-depth=".3">
+                </li>
+                <li class="layer6">
+                    <img src="./images/strawberry.png" class="l6" data-depth=".3">
+                </li>
+                <!-- ... -->
+            </ul>
+        </div>
+        <!-- Small coke images -->
+        <div>
+            <ul class="small-coke">
+                <li><img src="./images/coke-one.png" onclick="imgSlider();"></li>
+                <li><img src="./images/coke-two.png" onclick="imgSlider2();"></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Sections with images and content -->
+    <hr>
+    <section class="section-1">
+        <!-- Content for section 1 -->
+        <div class="section-container">
+            <div class="image-container">
+                <img class="section-image move-can" src="./images/coke-one.png" alt="Image">
+            </div>
+            <div class="section-content" id="mangocn">
+                <h2 class="section-heading">the king of fruits</h2>
+                <p class="section-paragraph">India and mangoes go a long way. A fruit so succulent, so sweet and so desired, that Indians waited impatiently for the seasons to turn and bring them closer to their beloved fruit.</p>
+            </div>
+            <div class="section-content" id="strawcn">
+                <h2 class="section-heading">Unwind, relax and sip on!</h2>
+                <p class="section-paragraph">strawberry deliciousness in a cool bottle of tasty for a gateaway mood of relaxation and nothingness</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="section-2">
+        <!-- Content for section 2 -->
+        <div class="section-container">
+            <div class="content-container" id="mangocn2">
+                <h2 class="section-heading">Seasonal fun, anytime any day</h2>
+                <p class="section-paragraph">Mangoes are seasonal but not the tasty mango juice that you can enjoy anytime after a tiring day</p>
+            </div>
+            <div class="content-container" id="strawcn2">
+                <h2 class="section-heading">Paint your mood pink</h2>
+                <p class="section-paragraph">sit back and chill with the bottle of flavourful the tasty strawberry juice</p>
+            </div>
+            <div class="image-container">
+                <img class="section-image move-can2" src="./images/coke-one.png" alt="Image">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="section-3">
+        <!-- Content for section 3 -->
+        <div class="col-sm-6 section-3-con">
+            <h1>tasty</h1>
+            <h2>Juices never tasted this yummy.</h2>
+        </div>
+        <div class="juices">
+            <img src="./images/coke-one.png" class="section-3-juice1" alt="">
+            <img src="./images/coke-two.png" class="section-3-juice" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Logo in footer -->
+                <div class="col-sm-4">
+                    <img src="./images/logo.png" class="footer-img" alt="Logo">
+                </div>
+                <!-- Copyright information and social media links -->
+                <div class="col-sm-4">
+                    <p>Copyright Anurag Tyagi</p>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <!-- icon -->
+       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+       <!-- GSAP  -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
